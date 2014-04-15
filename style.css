@@ -1,0 +1,553 @@
+/*
+Theme Name: Journalist
+Theme URI: http://lucianmarin.com/
+Description: Journalist is a smart, minimal theme designed for professional journalists.
+Version: 1.9
+Author: <a href="http://lucianmarin.com/">Lucian E. Marin</a>
+Tags: white, two columns, fixed width, light, minimal
+For the WordPress community (GPL), enjoy it guys.
+by Lucian E. Marin - lucianmarin.com
+*/
+
+body {
+background:#fff url('images/bg.jpg') fixed repeat-x;
+font:12px/18px 'Lucida Grande', Verdana, Arial, sans-serif;
+color:#444;
+padding:0;
+margin:0;
+}
+
+* {
+padding:0;
+margin:0;
+}
+
+a:link, a:visited {
+color:#1e95da;
+text-decoration:none;
+}
+
+a:link img, a:visited img {
+padding:2px;
+border:none;
+}
+
+a:hover {
+color:#01487e;
+}
+
+h2 {
+font:32px/36px 'Lucida Grande', Verdana, Arial, sans-serif;
+margin:0 0 20px 0;
+}
+
+h3 {
+color:#000;
+font:bold 18px/24px 'Lucida Grande', Verdana, Arial, sans-serif;
+text-transform:uppercase;
+}
+
+hr {
+background-color:#e3e4e5;
+border:0;
+color:#e3e4e5;
+height:1px;
+margin:15px 0;
+}
+
+strong {
+color:#000;
+}
+
+#header {
+width:870px;
+margin:0 auto;
+padding-top: 25px;
+padding-right:50px;
+padding-bottom: 25px;
+}
+
+#topmenu {
+float:right;
+padding:25px 0 0 0;
+}
+
+#topmenu a {
+font-size:13px;
+margin-left: 20px;
+text-transform:uppercase;
+}
+
+#container {
+width:911px;
+margin:0 auto;
+position:relative;
+}
+
+#bubble {
+top:40px;
+right:0;
+position:absolute;
+display:block;
+height:28px;
+background:url(images/bubble_right.gif) no-repeat right;
+}
+
+#bubble p {
+display:block;
+font-size:11px;
+color:#fff;
+height:28px;
+padding:4px 12px 0 10px;
+background:url(images/bubble_left.gif) no-repeat top left;
+}
+
+#content {
+float:right;
+width:610px;
+background-color:#fff;
+border:#b2e5fa 1px solid;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+padding:25px 20px 20px;
+}
+
+#content h2.archive {
+color:#1c1c1c;
+padding:0;
+margin:5px 0 20px 0;
+border:none;
+text-align:left;
+}
+
+.comments {
+color:#333;
+margin:0 0 15px 0;
+border-bottom:#bbb 1px solid;
+}
+
+.comments a {
+background:#fff;
+padding:0 7px 5px 0;
+color:#333;
+text-decoration:none;
+}
+
+.comments a:hover {
+color:#c00;
+}
+
+.navigation {
+background:#f9f9f9;
+font-size:11px;
+padding:5px 10px;
+margin:0 0 20px 0;
+border-top:#bbb 1px solid;
+}
+
+.navigation a {
+color:#555;
+font-weight:bold;
+text-decoration:none;
+}
+
+.navigation a:hover {
+color:#333;
+text-decoration:none;
+}
+
+.main h3 {
+font-size:16px;
+font-weight:normal;
+line-height:22px;
+text-transform:none;
+margin:0 0 10px 0;
+}
+
+.main p {
+line-height:18px;
+margin:0 0 15px 0;
+}
+
+.main ol {
+line-height:18px;
+margin:0 0 15px 30px;
+}
+
+.main ul {
+line-height:18px;
+margin:0 0 15px 30px;
+}
+
+.main li {
+margin:0 0 5px 0;
+}
+
+.meta {
+background:#f3f3f3;
+font-size:11px;
+line-height:15px;
+color:#333;
+padding:5px 10px;
+margin:0 0 30px 0;
+border-top:#bbb 1px solid;
+}
+
+.signature {
+float:left;
+padding:0 15px 0 0;
+border-right:#bbb 1px solid;
+width:200px;
+}
+
+.tags {
+float:left;
+padding:0 0 0 15px;
+width:440px;
+}
+
+#sidebar {
+color:#000;
+float:left;
+width:200px;
+background-color:#fff;
+border:#b2e5fa 1px solid;
+padding:0 20px 20px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+}
+
+#sidebar h3 {
+color:#333;
+margin:25px 0 10px 0;
+}
+
+#sidebar ul {
+list-style:none;
+}
+
+#sidebar ul ul {
+margin:5px 0 0 10px;
+}
+
+#sidebar ul ul ul {
+margin:5px 0 0 10px;
+}
+
+#sidebar ul li {
+border-bottom:1px solid #cccccc;
+padding:0 0 7px 0;
+margin:0 0 7px 0;
+}
+
+#author h3 {
+margin:5px 0 5px 0;
+}
+
+#searchform {
+font-size:12px;
+}
+
+#searchform #s {
+background-color:#f7f7f7;
+margin-right:7px;
+padding:2px 4px;
+border:#aaa 1px solid;
+color:#222;
+height:18px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;
+}
+
+#searchbutton {
+position:relative;
+bottom:3px;
+/*background-color:#333;
+border:none;
+color:#fff;
+cursor:pointer;
+height:24px;
+padding:2px 6px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;*/
+}
+
+input.subcom {
+background:#eee;
+font-size:11px;
+margin:0 0 10px 0;
+padding:1px 4px 2px 4px;
+border:#888 1px solid;
+color:#222;
+}
+
+input.subcom:hover {
+background:#222;
+cursor:pointer;
+border:#888 1px solid;
+color:#eee;
+}
+
+input.comment {
+background:#f6f6f6;
+font-size:11px;
+padding:2px 4px;
+border:#aaa 1px solid;
+color:#222;
+}
+
+input.comment:hover {
+border:#c00 1px solid;
+}
+
+textarea {
+background:#f6f6f6;
+font-size:12px;
+width:400px;
+padding:2px 4px;
+border:#aaa 1px solid;
+color:#222;
+}
+
+textarea:hover {
+border:#c00 1px solid;
+}
+
+.postinput small {
+font-size:11px;
+margin:0 0 0 5px;
+}
+
+p.logged {
+font-size:12px;
+}
+
+h3.reply {
+margin:0 0 10px 0;
+}
+
+.nocomments {
+margin:0 0 30px 0;
+}
+
+ol.commentlist {
+font-size:12px;
+list-style:none;
+margin:10px 0 30px 0;
+border-bottom:#bbb 1px solid;
+}
+
+.commentlist li {
+border-top:#bbb 1px solid;
+padding:0 0 10px 0;
+}
+
+.commentlist li.bypostauthor {
+border-top:#bbb 5px solid;
+background-color:#f3f3f3;
+}
+
+.comment_mod {
+margin:10px 0 0 10px;
+}
+
+.comment_mod em {
+background-color:#fff897;
+padding:1px 3px;
+}
+
+.comment_author {
+margin:10px 0;
+float:right;
+width:190px;
+}
+
+.comment_author img {
+float:left;
+margin:5px 12px 0 0;
+}
+
+.comment_author p {
+line-height:20px;
+}
+
+.comment_author small {
+font-size:11px;
+}
+
+.comment_text {
+float:left;
+width:470px;
+margin:0 0 0 10px;
+}
+
+.comment_text p {
+line-height:18px;
+margin:7px 0;
+}
+
+.comment_meta {
+font-size:12px;
+}
+
+#commentform p {
+line-height:18px;
+margin:0 0 15px 0;
+}
+
+blockquote {
+background:url(images/quote.gif) no-repeat top left;
+padding:0 0 0 60px;
+min-height:50px;
+}
+
+#footer {
+background:#fff;
+font-size:11px;
+color:#555;
+margin:15px auto 10px;
+padding:10px 0;
+text-align:center;
+position:relative;
+border:#b2e5fa 1px solid;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+width:911px;
+}
+
+#footer a {
+color:#555;
+font-weight:bold;
+text-decoration:none;
+}
+
+#footer a:hover {
+color:#333;
+text-decoration:none;
+}
+
+.clear {
+clear:both;
+}
+
+.warning p {
+background:url(images/warning.gif) no-repeat left;
+height:160px;
+padding:20px 0 0 90px;
+font-size:20px;
+line-height:26px;
+margin:0 0 0 10px;
+}
+
+#wp-calendar {
+padding:10px 0 0 0;
+font-size:12px;
+}
+
+#wp-calendar caption {
+text-align:left;
+padding:0 0 5px 0;
+}
+
+#wp-calendar tr th,
+#wp-calendar tr td {
+padding:0 6px 0 0 ;
+text-align:right;
+}
+
+#wp-calendar td a {
+font-weight:bold;
+}
+
+#wp-calendar td a:hover {
+font-weight:bold;
+}
+
+img.wp-smiley {
+padding:0;
+border:none;
+}
+
+abbr {
+border:none;
+}
+
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.alignleft {
+float:left;
+margin: 5px 20px 5px 0;
+text-align:center;
+}
+
+.alignright {
+float:right;
+margin:5px 0 5px 20px;
+text-align:center;
+}
+
+.wp-caption {
+border:1px solid #ddd;
+text-align:center;
+background-color:#f3f3f3;
+padding-top:4px;
+margin:10px;
+-moz-border-radius:3px;
+-khtml-border-radius:3px;
+-webkit-border-radius:3px;
+}
+
+.wp-caption img {
+margin:0;
+padding:0;
+border:0 none;
+}
+
+.wp-caption-dd {
+font-size:11px;
+line-height:17px;
+padding:0 4px 5px;
+margin:0;
+}
+
+/* self-clear floats */
+
+.group:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+/* IE Hacks */
+
+*html #bubble {
+display:none;
+}
+
+*html #bubble p {
+display:none;
+}
+
+* html .group,
+* html #nav ul li a {
+height: 1%;
+}
+
+*:first-child+html .group {
+min-height: 1px;
+}
+
+* html #nav ul li a {
+display: inline;
+}
